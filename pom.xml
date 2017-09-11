@@ -12,6 +12,7 @@
 
     <modules>
         <module>chapter03</module>
+        <module>chapter05</module>
     </modules>
 
     <properties>
