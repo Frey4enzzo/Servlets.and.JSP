@@ -13,16 +13,28 @@
         <servlet-name>ListenerTester</servlet-name>
         <servlet-class>org.book.chapter05.ListenerTester</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SynchronizedTester</servlet-name>
+        <servlet-class>org.book.chapter05.SynchronizedTester</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>ListenerTester</servlet-name>
         <url-pattern>/ListenTest.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SynchronizedTester</servlet-name>
+        <url-pattern>/SynchTest.do</url-pattern>
     </servlet-mapping>
 
     <!-- параметры инициализации контекста (ServletContext init parameters) -->
     <context-param>
         <param-name>breed</param-name>
         <param-value>Dog Jimm</param-value>
+    </context-param>
+    <context-param>
+        <param-name>catname</param-name>
+        <param-value>Cat Murka</param-value>
     </context-param>
 
 

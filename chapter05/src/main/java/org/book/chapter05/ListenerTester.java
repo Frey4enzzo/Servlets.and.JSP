@@ -20,7 +20,9 @@ public class ListenerTester extends HttpServlet{
         // получаем объект собаки, созднный при инициализации ServletContext
         // метод getAttribute возвращает тип Object, поэтому необходимо явное приведение к типу Dog
         Dog dog = (Dog) getServletContext().getAttribute("dog");
+        Cat cat = (Cat) getServletContext().getAttribute("cat");
 
-        out.println("Dog's breed is: " + dog.getBreed());
+        out.println("Dog's breed is: " + dog.getBreed() + "<br>");
+        out.println("Cat name is: " + cat.getName());
     }
 }

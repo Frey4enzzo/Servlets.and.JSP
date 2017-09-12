@@ -1,0 +1,13 @@
+Экземпляр класса RequestDispatcher перенаправляет на jsp форму (метод forward())вместе с объектами
+создаваемыми ServletContext (request и response).
+Получить объект RequestDispatcher можно из ServletRequest:
+request.getRequestDispatcher("view.jsp")
+
+Если путь начинается со знака / - то контейнер видит это как "начать с корневой папки приложения"
+Если путь НЕ начинается с обратного слэша / - то путь прибавляется к строке исходного запроса
+
+При получения RequestDispatcher из объекта ServletContext:
+getServletContext().getRequestDispatcher("/result.jsp") необходимо ВСЕГДА
+указывать путь со знаком обратного слэша /
+
+Нельзя передать request, если response уже подтвержден, т.е. response уже отправлен клиенту
