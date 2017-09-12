@@ -3,12 +3,19 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/chapter03" />
     <file type="web" url="file://$PROJECT_DIR$/chapter05" />
+    <file type="web" url="file://$PROJECT_DIR$/chapter06" />
+    <file type="web" url="file://$PROJECT_DIR$/chaptrer06" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/chaptrer06/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="PDMPlugin">
