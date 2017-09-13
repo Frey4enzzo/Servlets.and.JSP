@@ -4,14 +4,54 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 	     http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
+    <!-- Listeners -->
+    <listener>
+        <listener-class>org.book.chapter06.listeners.BeerSessionCounter</listener-class>
+    </listener>
+    <listener>
+        <listener-class>org.book.chapter06.listeners.BeerAttributeListener</listener-class>
+    </listener>
+
+    <!-- Servlets -->
     <servlet>
         <servlet-name>SessionTester</servlet-name>
         <servlet-class>org.book.chapter06.SessionTester</servlet-class>
     </servlet>
-    
+    <servlet>
+        <servlet-name>URLTester</servlet-name>
+        <servlet-class>org.book.chapter06.URLRewritingTester</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckCookie</servlet-name>
+        <servlet-class>org.book.chapter06.CheckCookie</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CookieTest</servlet-name>
+        <servlet-class>org.book.chapter06.CookieTest</servlet-class>
+    </servlet>
+
+    <!-- Mapping -->
     <servlet-mapping>
         <servlet-name>SessionTester</servlet-name>
         <url-pattern>/SessionTester.do</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>URLTester</servlet-name>
+        <url-pattern>/URLTester.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckCookie</servlet-name>
+        <url-pattern>/CheckCookie.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CookieTest</servlet-name>
+        <url-pattern>/CookieTest.do</url-pattern>
+    </servlet-mapping>
+
+    <!-- Session Config -->
+    <session-config>
+        <!-- Таймаут указывается в минутах -->
+        <session-timeout>20</session-timeout>
+    </session-config>
 
 </web-app>
