@@ -25,11 +25,23 @@
     %>
     <%= doubleCount() %>
 </p>
+<p> Session ID
+    <%= request.getRequestedSessionId()%>
+</p>
+<p> ArrayList 0 index
+    <% ArrayList<String> list = new ArrayList<>();
+            list.add(new String("Alexey"));%>
+    <%=list.get(0)%>
+</p>
+<p><a href="HobbyPage.jsp">HobbyPage</a></p>
+<p><a href="TestInit.jsp">Test JSP Initialization</a></p>
+<p> Expression tests
 <%= 5 > 3%>
 <%= "27" %>
 <%= Math.random() %>
 <%=  new String[3]%>
 <%= false %>
 <%= new Counter() %>
+</p>
 </body>
 </html>

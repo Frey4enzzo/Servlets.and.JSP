@@ -15,19 +15,56 @@
         <module>chapter05</module>
         <module>chapter06</module>
         <module>chapter07</module>
+        <module>chapter08</module>
     </modules>
 
     <properties>
         <version.javax.servlet>3.1.0</version.javax.servlet>
+        <version.jsp>2.3.1</version.jsp>
+        <version.el>3.0.0</version.el>
+        <version.logger>1.2.17</version.logger>
+        <version.jstl>1.2</version.jstl>
     </properties>
 
     <dependencyManagement>
         <dependencies>
 
+            <!-- Java Servlets -->
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
                 <version>${version.javax.servlet}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- JSP -->
+            <dependency>
+                <groupId>javax.servlet.jsp</groupId>
+                <artifactId>javax.servlet.jsp-api</artifactId>
+                <version>${version.jsp}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- Expression Language (EL)-->
+            <dependency>
+                <groupId>javax.el</groupId>
+                <artifactId>javax.el-api</artifactId>
+                <version>${version.el}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- JSTL -->
+            <!--<dependency>-->
+                <!--<groupId>jstl</groupId>-->
+                <!--<artifactId>jstl</artifactId>-->
+                <!--<version>${version.jstl}</version>-->
+            <!--</dependency>-->
+
+            <!-- Logger -->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${version.logger}</version>
                 <scope>provided</scope>
             </dependency>
 
