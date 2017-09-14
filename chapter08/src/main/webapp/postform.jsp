@@ -1,11 +1,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Action Form</title>
+    <title>Post Form</title>
 </head>
 <body>
     <p>
-    <form method="post" action="Postform.do">
+    <form method="post" action="postform.jsp">
         Name: <input type="text" name="name"> </br>
         ID#:  <input type="text" name="empID"> </br>
         </br>
@@ -24,6 +24,11 @@
         Second food request param: ${paramValues.food[1]} <br>
         <br>
         Request param name: ${paramValues.name[0]}
+    </p>
+    <p><strong>Implict Objects</strong><br>
+        Host is: ${header.host} <br>
+        Method is: ${pageContext.request.method} <br>
+        Admin Email is: ${initParam.adminEmail} get from Context Init parameter from web.xml <br>
     </p>
 </body>
 </html>

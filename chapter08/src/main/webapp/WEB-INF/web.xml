@@ -4,6 +4,11 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 	     http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
+    <context-param>
+        <param-name>adminEmail</param-name>
+        <param-value>admin@mail.ru</param-value>
+    </context-param>
+
     <servlet>
         <servlet-name>Example2</servlet-name>
         <servlet-class>org.chapter08.ex1.Example2</servlet-class>

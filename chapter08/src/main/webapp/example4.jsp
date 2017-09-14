@@ -4,6 +4,7 @@
     <title>Example 4</title>
 </head>
 <body>
+<%@include file="header.jsp"%>
 <p>
     ${employee.name}'s dog ${employee.dog.breed} toys are: </br>
     ${employee.dog.toys[0].name},${employee.dog.toys[1].name}, and ${employee.dog.toys[2].name}
@@ -14,5 +15,6 @@
     ${pageContent.currentTip} </br>
 
 </div>
+<jsp:include page="/header.jsp"/>
 </body>
 </html>
