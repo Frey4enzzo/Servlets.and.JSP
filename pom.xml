@@ -54,11 +54,11 @@
             </dependency>
 
             <!-- JSTL -->
-            <!--<dependency>-->
-                <!--<groupId>jstl</groupId>-->
-                <!--<artifactId>jstl</artifactId>-->
-                <!--<version>${version.jstl}</version>-->
-            <!--</dependency>-->
+            <dependency>
+                <groupId>jstl</groupId>
+                <artifactId>jstl</artifactId>
+                <version>${version.jstl}</version>
+            </dependency>
 
             <!-- Logger -->
             <dependency>
