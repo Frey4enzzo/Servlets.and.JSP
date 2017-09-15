@@ -11,6 +11,7 @@
         <module name="chapter06" />
         <module name="chapter07" />
         <module name="chapter08" />
+        <module name="chapter09" />
         <module name="chaptrer06" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="chapter06" target="1.8" />
       <module name="chapter07" target="1.8" />
       <module name="chapter08" target="1.8" />
+      <module name="chapter09" target="1.8" />
       <module name="chaptrer06" target="1.8" />
       <module name="servlets and jsp" target="1.8" />
     </bytecodeTargetLevel>
