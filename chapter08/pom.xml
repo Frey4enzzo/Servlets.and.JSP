@@ -8,7 +8,7 @@
     <artifactId>chapter08</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>08 - EL</name>
+    <name>08 - EL (+ include pages)</name>
 
     <parent>
         <artifactId>servlets</artifactId>

@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Alexey
-  Date: 15.09.2017
-  Time: 10:21
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -20,6 +14,19 @@
             <li>Employee 5: ${employees[4].firstName} ${employees[4].lastName}, отдел - ${employees[4].department.name} <br></li>
         </ul>
     </p>
-
+    <p> Пример использования значения по умолчанию, если выражение null <br>
+        <c:out value="${employees[0].firstName}" default="guest"/>
+    </p>
+    <p> <strong>Пример использования JSTL тега forEach для массивов и списков </strong><br>
+        <table>
+            <c:forEach var="employee" items="${employees}" >
+                <tr>
+                    <td>${employee.firstName}</td>
+                    <td>${employee.lastName}</td>
+                    <td>${employee.department.name}</td>
+                </tr>
+            </c:forEach>
+        </table>
+    </p>
 </body>
 </html>

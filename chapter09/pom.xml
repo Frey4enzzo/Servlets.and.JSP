@@ -8,7 +8,7 @@
     <artifactId>chapter09</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>09 - JSTL</name>
+    <name>09 - JSTL (+ErrorsPages)</name>
 
     <parent>
         <artifactId>servlets</artifactId>
